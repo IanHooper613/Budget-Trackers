@@ -28,6 +28,12 @@ cache.addAll(FILES_TO_CACHE)
 //activate service worker
 self.addEventListener('activate', evt =>{
   console.log ('service worker activated')
+  evt.waitUntil(
+    caches.keys().then(keys => {
+    return Promise.all(keys
+      .filter(key => key !== CACHE_NAME)
+    .map(key => caches.delete(key)))
+  }))
 })
 
 //created fetch event when getting stuff from server
