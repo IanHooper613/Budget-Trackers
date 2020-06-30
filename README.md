@@ -2,6 +2,15 @@
 An application that allows users to track deposits and withdrawals with or without an internet connection. 
 
 
+## Technologies Used
+
+- HTML and CSS
+- JavaScript
+- NodeJS
+- MongoDB
+
+
+
 ## Screenshots
 
 ### Application running on localhost
