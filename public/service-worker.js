@@ -36,7 +36,7 @@ self.addEventListener('activate', evt =>{
   }))
 })
 
-//created fetch event when getting stuff from server
+//created fetch event
 self.addEventListener('fetch', evt =>{
   //console.log('fetch event',evt);
   evt.respondWith(
